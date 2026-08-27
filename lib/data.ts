@@ -112,6 +112,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "acams-system",
+    title: "Access Control & Asset Management System (ACAMS)",
+    short: "Biometrics integration & real-time hardware asset tracking system.",
+    description:
+      "Engineered an integrated Access Control and Asset Management System combining dual ATmega328P microcontrollers and an ESP32-CAM module via UART with a Next.js full-stack web application. Provides secure biometric access logging, hardware inventory tracking, and real-time administrative oversight for TUT 4IR lab environments.",
+    tags: ["Next.js", "TypeScript", "Embedded C++", "ESP32", "Supabase", "Tailwind CSS"],
+    category: "web",
+    icon: ShieldCheck,
+    highlights: [
+      "Architected reliable UART serial communication protocol between dual ATmega328P base and ESP32-CAM",
+      "Designed and deployed a responsive Next.js web application using Supabase for user access roles and real-time logs",
+      "Integrated hardware biometrics and asset tracking into a unified administrative dashboard",
+    ],
+    stack: ["Next.js", "TypeScript", "C++", "ESP32", "ATmega328P", "Supabase", "Tailwind CSS", "Shadcn UI"],
+  },
+  {
     id: "ros2-wall-avoidance",
     title: "ROS2 Wall Avoidance Robot",
     short: "Autonomous mobile robot with sensor-driven path planning.",
@@ -223,4 +239,4 @@ export const navLinks = [
   { label: "Projects", href: "#projects" },
   { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
-];
+]
