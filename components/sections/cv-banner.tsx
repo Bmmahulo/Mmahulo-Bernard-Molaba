@@ -84,7 +84,7 @@ export function CVBanner() {
                       Mmahulo_Molaba_CV.pdf
                     </span>
                     <span className="ml-auto text-[10px] font-mono text-muted-foreground/70">
-                      1.2 MB
+                      Updated CV
                     </span>
                   </div>
 
