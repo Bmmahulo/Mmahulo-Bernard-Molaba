@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 9 13 22;
+    --foreground: 241 245 249;
+    --primary: 34 211 238;
+    --accent: 16 185 129;
+    --border: 30 41 59;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1;
+    background-image:
+      radial-gradient(at 8% 10%, rgba(34, 211, 238, 0.10) 0px, transparent 50%),
+      radial-gradient(at 92% 0%, rgba(16, 185, 129, 0.08) 0px, transparent 50%),
+      radial-gradient(at 50% 100%, rgba(99, 102, 241, 0.08) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    @apply bg-primary/30 text-foreground;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary via-cyan-300 to-accent bg-clip-text text-transparent;
+    background-size: 200% 200%;
+    animation: gradientX 6s ease infinite;
+  }
+
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+
+  .glass-strong {
+    @apply bg-surface/60 backdrop-blur-xl border border-white/10;
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(30, 41, 59, 0.2) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(30, 41, 59, 0.2) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .glow-cyan {
+    box-shadow:
+      0 0 0 1px rgba(34, 211, 238, 0.3),
+      0 0 30px -5px rgba(34, 211, 238, 0.5);
+  }
+
+  .glow-emerald {
+    box-shadow:
+      0 0 0 1px rgba(16, 185, 129, 0.3),
+      0 0 30px -5px rgba(16, 185, 129, 0.5);
+  }
+
+  .mask-fade-y {
+    mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  }
+
+  .pause-on-hover:hover {
+    animation-play-state: paused;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

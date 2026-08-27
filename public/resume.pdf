@@ -1,0 +1,75 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 540 >>
+stream
+BT
+/F2 22 Tf
+72 720 Td
+(Mmahulo Bernard Molaba) Tj
+0 -28 Td
+/F2 14 Tf
+(Computer Systems Engineering Candidate) Tj
+0 -22 Td
+/F1 11 Tf
+(mmahulo.molaba@gmail.com  |  Gauteng, South Africa  |  github.com/mmahulo-molaba) Tj
+0 -36 Td
+/F2 14 Tf
+(Profile) Tj
+0 -20 Td
+/F1 11 Tf
+(Final-year Computer Systems Engineering candidate specialising in full-stack) Tj
+0 -14 Td
+(web development, robotics (ROS2), industrial PLC automation, and AI/ML agents.) Tj
+0 -28 Td
+/F2 14 Tf
+(Education) Tj
+0 -20 Td
+/F1 11 Tf
+(Diploma in Computer Systems Engineering - Tshwane University of Technology) Tj
+0 -14 Td
+(2023 - Present  |  Focus: Linux, Industrial Automation, ML, Systems Architecture) Tj
+0 -28 Td
+/F2 14 Tf
+(Skills) Tj
+0 -20 Td
+/F1 11 Tf
+(Next.js, React, TypeScript, Java, C++, Python, SQL, REST APIs, GitHub) Tj
+0 -14 Td
+(ROS2, Siemens PLC (S7), TIA Portal, Allen Bradley, Sensor Integration) Tj
+0 -14 Td
+(Supervised/Unsupervised Learning, Reinforcement Learning, Unity ML-Agents) Tj
+0 -14 Td
+(Linux, SSH, Arduino, Embedded Systems, Secure Data Transfer) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 7
+0000000000 65535 f
+0000000010 00000 n
+0000000053 00000 n
+0000000098 00000 n
+0000000201 00000 n
+0000000790 00000 n
+0000000851 00000 n
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+912
+%%EOF
