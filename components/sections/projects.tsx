@@ -135,19 +135,31 @@ export function Projects() {
                 </div>
               </div>
 
-              <div className="flex items-center justify-between pt-2">
+              <div className="flex items-center justify-between pt-2 gap-2 flex-wrap">
                 <Button asChild variant="ghost" size="sm">
                   <a href="#projects">
                     <X className="size-4" />
                     Close
                   </a>
                 </Button>
-                <Button asChild size="sm">
-                  <a href="#contact">
-                    Discuss this project
-                    <ArrowUpRight className="size-4" />
-                  </a>
-                </Button>
+
+                <div className="flex items-center gap-2">
+                  {active.githubUrl ? (
+                    <Button asChild variant="secondary" size="sm">
+                      <a href={active.githubUrl} target="_blank" rel="noreferrer">
+                        GitHub
+                        <ArrowUpRight className="size-4" />
+                      </a>
+                    </Button>
+                  ) : null}
+
+                  <Button asChild size="sm">
+                    <a href="#contact">
+                      Discuss this project
+                      <ArrowUpRight className="size-4" />
+                    </a>
+                  </Button>
+                </div>
               </div>
             </DialogContent>
           )}

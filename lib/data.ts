@@ -108,9 +108,27 @@ export type Project = {
   icon: LucideIcon;
   highlights: string[];
   stack: string[];
+  githubUrl?: string;
 };
 
 export const projects: Project[] = [
+  {
+    id: "finance-agent-project",
+    title: "Finance-Agent-Project",
+    short: "AI-powered finance assistant for budgeting, insights, and data-driven decisions.",
+    description:
+      "Developed a finance-oriented AI project focused on expense analysis, automated budgeting support, and real-time financial insights. The system combines a modern web interface with intelligent processing to help users interpret financial data, identify spending patterns, and make informed decisions from conversational prompts and structured information.",
+    tags: ["AI", "Finance", "Next.js", "Python", "LLM"],
+    category: "ai",
+    icon: Brain,
+    highlights: [
+      "Built an AI-driven workflow to analyse financial data and summarise spending trends",
+      "Created a user-facing dashboard for budgeting guidance and business decision support",
+      "Integrated intelligent recommendations to convert raw financial information into actionable insights",
+    ],
+    stack: ["Next.js", "TypeScript", "Python", "FastAPI", "LLM", "PostgreSQL", "Tailwind CSS"],
+    githubUrl: "https://github.com/mmahulo-molaba/Finance-Agent-Project",
+  },
   {
     id: "acams-system",
     title: "Access Control & Asset Management System (ACAMS)",
