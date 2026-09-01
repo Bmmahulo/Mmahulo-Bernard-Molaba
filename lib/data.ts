@@ -109,9 +109,28 @@ export type Project = {
   highlights: string[];
   stack: string[];
   githubUrl?: string;
+  liveUrl?: string;
 };
 
 export const projects: Project[] = [
+  {
+    id: "radiography-anomaly-detection",
+    title: "Radiography Anomaly Detection",
+    short: "Friendly AI-assisted X-ray screening interface with visual anomaly overlays.",
+    description:
+      "Built an end-to-end radiography screening prototype that combines a Next.js and Tailwind user interface with a FastAPI inference API. Users can upload PNG, JPEG, or DICOM scans, review triage-style confidence results, and inspect a heatmap overlay. The deployed Render demo uses a lightweight fallback to remain stable on constrained infrastructure.",
+    tags: ["AI", "Next.js", "FastAPI", "Medical Imaging"],
+    category: "ai",
+    icon: Brain,
+    highlights: [
+      "Created a responsive upload workflow with local image preview and clear result states",
+      "Implemented typed FastAPI endpoints for health checks, scan uploads, and analysis responses",
+      "Added a Render-safe demo mode with lightweight heatmap generation and deployment documentation",
+    ],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "FastAPI", "PyTorch", "OpenCV", "Grad-CAM", "Render", "Vercel"],
+    githubUrl: "https://github.com/Bmmahulo/radiography_anomaly_detection",
+    liveUrl: "https://frontend-bernard16.vercel.app/",
+  },
   {
     id: "finance-agent-project",
     title: "Finance-Agent-Project",

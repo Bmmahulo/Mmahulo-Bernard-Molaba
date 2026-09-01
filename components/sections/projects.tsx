@@ -153,6 +153,15 @@ export function Projects() {
                     </Button>
                   ) : null}
 
+                  {active.liveUrl ? (
+                    <Button asChild variant="secondary" size="sm">
+                      <a href={active.liveUrl} target="_blank" rel="noreferrer">
+                        Live demo
+                        <ArrowUpRight className="size-4" />
+                      </a>
+                    </Button>
+                  ) : null}
+
                   <Button asChild size="sm">
                     <a href="#contact">
                       Discuss this project
